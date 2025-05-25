@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>SportLoryu's - Chaqueta Deportiva "FlexFit"</title>
+    <meta name="description" content="Detalles de la Chaqueta Deportiva FlexFit.">
+    <meta name="theme-color" content="#14213d">
+
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+    <link rel="stylesheet" href="../../assets/css/home.css"> <!-- Reutilizar estilos de home si aplican -->
+    <link rel="stylesheet" href="../../assets/css/product-detail.css"> <!-- Nuevo archivo CSS para detalles de producto -->
+    <link rel="stylesheet" href="../../assets/css/button-animation.css"> <!-- Estilos para la animación del botón -->
+</head>
+<body>
+    <!-- Header (copiado de index.html) -->
+    <header class="header">
+        <div class="container">
+            <div class="flex justify-between items-center">
+                <div class="logo">
+                    <span class="logo-text">SportLoryu's</span>
+                </div>
+
+                <nav class="main-nav hidden-mobile">
+                    <ul class="flex gap-2">
+                        <li><a href="../../index.html" data-i18n="nav.home">Inicio</a></li>
+                        <li class="has-submenu" data-no-submenu="true">
+                            <a href="../../index.html#productos" data-i18n="nav.categories">Categorías</a>
+                            <ul class="submenu">
+                                <li><a href="#">Mujer</a></li>
+                                <li><a href="#">Hombre</a></li>
+                                <li><a href="#">Unisex</a></li>
+                                <li><a href="#">Edición limitada</a></li>
+                                <li><a href="#">Outlet</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../../index.html#contacto" data-i18n="nav.contact">Contacto</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header-actions flex items-center gap-1">
+                    <a href="#" class="header-icon">
+                        <i class="fas fa-search"></i>
+                    </a>
+                    <a href="#" class="header-icon">
+                        <i class="fas fa-user"></i>
+                    </a>
+                    <a href="#" class="header-icon">
+                        <i class="fas fa-heart"></i>
+                    </a>
+                    <a href="#" class="header-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>
+                    <div class="language-selector">
+                        <div class="current-lang">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAeElEQVR4nO3VwQ3AIAxDUd86FWIGhu0Amcy9IhawUv6TcifBAQkAgD9wPe5UooHiBkyEdulImCWu/FTNM1r5yZqPrHqUTukDmQYqP1VfHaG5Xncq0cDiBkyEdulIzOuX2EPuVDqlD2QaGPmpmgiN/GR97RIDAKCGPreWChBwWzVLAAAAAElFTkSuQmCC" alt="Español" class="lang-flag">
+                            <span>ES</span>
+                        </div>
+                    </div>
+                    <button class="menu-toggle hidden-desktop">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Menú móvil (copiado de index.html) -->
+    <div class="mobile-menu">
+        <nav>
+            <ul>
+                <li><a href="../../index.html" data-i18n="nav.home">Inicio</a></li>
+                <li class="has-submenu">
+                    <a href="../../index.html#productos" data-i18n="nav.categories">Categorías</a>
+                    <ul class="submenu">
+                        <li><a href="#">Mujer</a></li>
+                        <li><a href="#">Hombre</a></li>
+                        <li><a href="#">Unisex</a></li>
+                        <li><a href="#">Edición limitada</a></li>
+                        <li><a href="#">Outlet</a></li>
+                    </ul>
+                </li>
+                <li><a href="../../index.html#contacto" data-i18n="nav.contact">Contacto</a></li>
+            </ul>
+            <!-- Selector de idioma para móvil -->
+            <div class="language-selector mobile-language">
+                <div class="current-lang">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAeElEQVR4nO3VwQ3AIAxDUd86FWIGhu0Amcy9IhawUv6TcifBAQkAgD9wPe5UooHiBkyEdulImCWu/FTNM1r5yZqPrHqUTukDmQYqP1VfHaG5Xncq0cDiBkyEdulIzOuX2EPuVDqlD2QaGPmpmgiN/GR97RIDAKCGPreWChBwWzVLAAAAAElFTkSuQmCC" alt="Español" class="lang-flag">
+                    <span>ES</span>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Banner de descuento (copiado de index.html) -->
+    <div class="discount-banner">
+        <div class="container">
+            <p data-i18n="discount">🔥 <strong>20% DESCUENTO</strong> en chaquetas de cuero hasta fin de mes | <strong>Envío gratis</strong> en compras mayores a 100.000 COP | <strong>Garantía de 2 años</strong> en todos nuestros productos | <strong>Soporte 24/7</strong> para clientes premium 🔥</p>
+        </div>
+    </div>
+
+    <!-- Sección de Detalles del Producto -->
+    <section class="product-detail-section">
+        <div class="container">
+            <div class="product-detail-content">
+                <div class="product-detail-image">
+                    <img src="../../assets/images/products/2.png" alt="Chaqueta Deportiva FlexFit">
+                </div>
+                <div class="product-detail-info">
+                    <h1 class="product-title">Chaqueta Deportiva "FlexFit"</h1>
+                    <div class="product-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>(45 opiniones)</span>
+                    </div>
+                    <p class="product-price">COP 300.000</p>
+                    <p class="product-description">Experimenta la libertad de movimiento con nuestra Chaqueta Deportiva "FlexFit". Diseñada para el rendimiento y el estilo, es perfecta para tus entrenamientos o actividades diarias.</p>
+
+                    <div class="product-options">
+                        <div class="size-selector">
+                            <label for="size">Talla:</label>
+                            <select id="size" name="size">
+                                <option value="xs">XS</option>
+                                <option value="s">S</option>
+                                <option value="m">M</option>
+                                <option value="l">L</option>
+                                <option value="xl">XL</option>
+                            </select>
+                        </div>
+                        
+                        <div class="quantity-selector">
+                            <label for="quantity">Cantidad:</label>
+                            <input type="number" id="quantity" name="quantity" value="1" min="1">
+                        </div>
+                        
+                        <!-- Add to cart button moved below both size and quantity selectors -->
+                        <div class="add-to-cart-button">
+                            <button class="btn btn-primary"><i class="fas fa-shopping-cart"></i> Añadir al carrito</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pestañas de Información Adicional (Descripción, Características, Reseñas) -->
+            <div class="product-tabs">
+                <div class="tab-header">
+                    <button class="tab-button active" data-tab="description">Descripción</button>
+                    <button class="tab-button" data-tab="features">Características</button>
+                    <button class="tab-button" data-tab="reviews">Reseñas</button>
+                </div>
+                <div class="tab-content">
+                    <div id="description" class="tab-pane active">
+                        <h3>Descripción del Producto</h3>
+                        <p>La Chaqueta Deportiva "FlexFit" está confeccionada con un tejido elástico y transpirable que se adapta a tus movimientos. Ideal para actividades deportivas o para un look casual y activo. Cuenta con detalles reflectantes para mayor visibilidad en condiciones de poca luz.</p>
+                        <ul>
+                            <li>Tejido elástico y transpirable</li>
+                            <li>Diseño ergonómico para máxima libertad de movimiento</li>
+                            <li>Detalles reflectantes</li>
+                            <li>Bolsillos con cremallera segura</li>
+                            <li>Disponible en varios colores</li>
+                        </ul>
+                    </div>
+                    <div id="features" class="tab-pane">
+                        <h3>Características Técnicas</h3>
+                        <ul>
+                            <li>Material: 90% Poliéster, 10% Elastano</li>
+                            <li>Tecnología de absorción de humedad</li>
+                            <li>Cremallera frontal completa</li>
+                            <li>Cuello alto para protección adicional</li>
+                            <li>Puños elásticos</li>
+                        </ul>
+                    </div>
+                    <div id="reviews" class="tab-pane">
+                        <h3>Reseñas de Clientes</h3>
+                        <div class="customer-reviews">
+                            <div class="review">
+                                <div class="review-header">
+                                    <span class="reviewer-name">Diego Morales</span>
+                                    <div class="review-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <span class="review-date">10/02/2024</span>
+                                </div>
+                                <p class="review-text">Increíble libertad de movimiento. Uso esta chaqueta para mis entrenamientos matutinos y es perfecta. El material es ligero pero abriga lo suficiente, y la transpirabilidad es excelente incluso durante ejercicios intensos. Los detalles reflectantes son un plus para correr al amanecer.</p>
+                            </div>
+                            
+                            <div class="review">
+                                <div class="review-header">
+                                    <span class="reviewer-name">Valentina Restrepo</span>
+                                    <div class="review-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <span class="review-date">23/03/2024</span>
+                                </div>
+                                <p class="review-text">La mejor chaqueta deportiva que he tenido. El diseño ergonómico realmente hace la diferencia cuando estás en movimiento. Me encanta que sea tan versátil, la uso tanto para el gimnasio como para salidas casuales. Los bolsillos con cremallera son muy seguros para guardar las llaves y el celular.</p>
+                            </div>
+                            
+                            <div class="review">
+                                <div class="review-header">
+                                    <span class="reviewer-name">Javier Quintero</span>
+                                    <div class="review-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <span class="review-date">05/04/2024</span>
+                                </div>
+                                <p class="review-text">Muy buena chaqueta para actividades deportivas. El tejido elástico se adapta perfectamente al cuerpo sin restringir movimientos. Le quito una estrella porque me hubiera gustado más variedad de colores, pero en cuanto a funcionalidad es excelente. La tecnología de absorción de humedad funciona muy bien.</p>
+                            </div>
+                            
+                            <div class="review">
+                                <div class="review-header">
+                                    <span class="reviewer-name">Carolina Duque</span>
+                                    <div class="review-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                    <span class="review-date">19/04/2024</span>
+                                </div>
+                                <p class="review-text">Compré esta chaqueta para mis clases de yoga y pilates, y ha sido una excelente inversión. Se estira lo suficiente para no limitar ninguna postura y el material transpirable evita que me sobrecaliente. El cuello alto es perfecto para las mañanas frías. Muy recomendada para cualquier actividad física.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- Footer (copiado de index.html) -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Información de la empresa -->
+                <div class="footer-section">
+                    <h3>SportLoryu's</h3>
+                    <p>Tu marca de moda deportiva urbana. Diseñamos chaquetas y prendas que fusionan innovación, calidad y estilo urbano con materiales sostenibles.</p>
+                    <div class="social-icons">
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                </div>
+
+                <!-- Enlaces útiles -->
+                <div class="footer-section">
+                    <h3>Enlaces Útiles</h3>
+                    <ul>
+                        <li>Sobre Nosotros</li>
+                        <li>Términos y Condiciones</li>
+                        <li>Política de Privacidad</li>
+                        <li>Política de Devoluciones</li>
+                        <li>Preguntas Frecuentes</li>
+                    </ul>
+                </div>
+
+                <!-- Categorías -->
+                <div class="footer-section">
+                    <h3>Categorías</h3>
+                    <ul>
+                        <li>Cuero</li>
+                        <li>Denim</li>
+                        <li>Bomber</li>
+                        <li>Parka</li>
+                        <li>Impermeable</li>
+                    </ul>
+                </div>
+
+                <!-- Contacto -->
+                <div id="contacto" class="footer-section">
+                    <h3>Contacto</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Av. 80 # 45-20, Medellín</p>
+                    <p><i class="fas fa-phone"></i> +57 310 123 4567</p>
+                    <p><i class="fas fa-envelope"></i> info@sportloryus.com</p>
+                    <p><i class="fas fa-clock"></i> Lun-Vie: 9am - 6pm</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom text-center py-2 mt-2">
+                <p>&copy; 2024 SportLoryu's. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts JS -->
+    <script src="../../assets/js/main.js"></script>
+    <script>
+        // Script para manejar las pestañas
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabs = document.querySelectorAll('.tab-button');
+            const panes = document.querySelectorAll('.tab-pane');
+
+            tabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    const targetTab = tab.dataset.tab;
+
+                    tabs.forEach(t => t.classList.remove('active'));
+                    panes.forEach(pane => pane.classList.remove('active'));
+
+                    tab.classList.add('active');
+                    document.getElementById(targetTab).classList.add('active');
+                });
+            });
+        });
+    </script>
+    <!-- Script para la animación del botón "Añadir al carrito" -->
+    <script src="../../assets/js/cart-animation.js"></script>
+</body>
+</html> 

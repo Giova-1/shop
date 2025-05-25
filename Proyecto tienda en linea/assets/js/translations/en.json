@@ -1,0 +1,59 @@
+{
+    "nav": {
+        "home": "Home",
+        "products": "Products",
+        "categories": "Categories",
+        "offers": "Offers",
+        "contact": "Contact"
+    },
+    "hero": {
+        "title": "Jackets and sportswear that blend innovation and urban style",
+        "description": "Discover our collection of premium jackets and sportswear with the best materials, unique designs, and eco-friendly textile technology.",
+        "cta": "View collection"
+    },
+    "about": {
+        "title": "About SportLoryu's",
+        "p1": "At SportLoryu's, we design jackets and sportswear that blend innovation, quality, and urban style. We are committed to offering durable and functional products, made with sustainable materials, to accompany our customers in their active lives.",
+        "p2": "Our mission is to democratize sportswear without sacrificing premium design, through accessible prices and close customer service.",
+        "p3": "We aspire to be recognized as the leading urban sportswear brand in Colombia by 2027, expanding our presence to international markets and creating a community of customers who value the versatility of our garments.",
+        "values": {
+            "title": "Our Values",
+            "quality": "Quality over quantity: Garments designed to last",
+            "urban": "Urban connection: Designs that reflect the energy of the city",
+            "sustainability": "Sustainability: Progressive use of recycled materials",
+            "customer": "Customer focus: Personalized attention and shipping"
+        },
+        "cta": "Learn more"
+    },
+    "products": {
+        "title": "Featured Products",
+        "viewDetails": "View details"
+    },
+    "features": {
+        "main_title": "Our Advantages",
+        "shipping": {
+            "title": "Free Shipping",
+            "description": "Free shipping nationwide on purchases over COP 400,000."
+        },
+        "warranty": {
+            "title": "2-Year Warranty",
+            "description": "All our jackets include extended warranty against defects."
+        },
+        "payment": {
+            "title": "Secure Payment",
+            "description": "Multiple secure payment methods."
+        },
+        "support": {
+            "title": "24/7 Support",
+            "description": "Customer service available every day of the year."
+        }
+    },
+    "footer": {
+        "about": "Your urban sportswear brand. We design jackets and garments that blend innovation, quality, and urban style with sustainable materials.",
+        "links": "Useful Links",
+        "categories": "Categories",
+        "contact": "Contact",
+        "copyright": "All rights reserved."
+    },
+    "discount": "🔥 <strong>20% DISCOUNT</strong> on leather jackets until the end of the month | <strong>Free shipping</strong> on orders over COP 400,000 | <strong>2-year warranty</strong> on all our products | <strong>24/7 support</strong> for premium customers 🔥"
+} 

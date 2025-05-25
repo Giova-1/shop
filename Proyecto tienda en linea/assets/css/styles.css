@@ -1,0 +1,877 @@
+:root {
+    --black: #000000;
+    --oxford-blue: #14213d;
+    --orange: #fca311;
+    --platinum: #e5e5e5;
+    --white: #ffffff;
+    
+    --font-light: 300;
+    --font-regular: 400;
+    --font-medium: 500;
+    --font-semibold: 600;
+    --font-bold: 700;
+    
+    --shadow-sm: 0 2px 4px rgba(0,0,0,0.1);
+    --shadow-md: 0 4px 8px rgba(0,0,0,0.1);
+    --shadow-lg: 0 8px 16px rgba(0,0,0,0.1);
+    
+    --border-radius-sm: 5px;
+    --border-radius-md: 8px;
+    --border-radius-lg: 10px;
+    
+    /* Breakpoints para responsive */
+    --breakpoint-xs: 576px;
+    --breakpoint-sm: 768px;
+    --breakpoint-md: 992px;
+    --breakpoint-lg: 1200px;
+}
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--white);
+    color: var(--oxford-blue);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Contenedor principal */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Botones */
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: var(--border-radius-sm);
+    font-weight: var(--font-semibold);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    min-width: 120px;
+}
+
+.btn-primary {
+    background-color: var(--orange);
+    color: var(--white);
+}
+
+.btn-primary:hover {
+    background-color: #e69100;
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.btn-secondary {
+    background-color: var(--oxford-blue);
+    color: var(--white);
+}
+
+.btn-secondary:hover {
+    background-color: #0e1a30;
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+/* Utilidades comunes */
+.text-center {
+    text-align: center;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.gap-1 {
+    gap: 1rem;
+}
+
+.gap-2 {
+    gap: 2rem;
+}
+
+.mt-1 {
+    margin-top: 1rem;
+}
+
+.mt-2 {
+    margin-top: 2rem;
+}
+
+.mb-1 {
+    margin-bottom: 1rem;
+}
+
+.mb-2 {
+    margin-bottom: 2rem;
+}
+
+.mb-3 {
+    margin-bottom: 1.5rem;
+}
+
+.py-1 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.py-2 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.px-1 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.px-2 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+/* Utilidades para centrado */
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos para el encabezado */
+.header {
+    background-color: var(--white);
+    box-shadow: var(--shadow-sm);
+    padding: 1.5rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    text-align: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.logo-text {
+    font-weight: var(--font-bold);
+    color: var(--oxford-blue);
+    font-size: 2rem;
+    text-align: center;
+}
+
+/* Estilos para el banner de descuento */
+.discount-banner {
+    background-color: var(--orange);
+    color: var(--white);
+    padding: 0.8rem 0;
+    position: relative;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.discount-banner .container {
+    white-space: nowrap;
+    overflow: hidden;
+    padding: 0;
+}
+
+.discount-banner p {
+    display: inline-block;
+    font-size: 1.1rem;
+    font-weight: var(--font-medium);
+    animation: banner-scroll 20s linear infinite;
+    margin: 0;
+    letter-spacing: 0.5px;
+    text-align: center;
+    width: 100%;
+}
+
+.discount-banner p strong {
+    color: var(--white);
+    font-weight: var(--font-bold);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes banner-scroll {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Hacer que se detenga la animación al hacer hover */
+.discount-banner:hover p {
+    animation-play-state: paused;
+}
+
+/* Estilos para el footer */
+.footer {
+    background-color: var(--oxford-blue);
+    color: var(--white);
+    padding: 2rem 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-section h3 {
+    margin-bottom: 1rem;
+    font-weight: var(--font-semibold);
+}
+
+.social-icons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.social-icons a {
+    color: var(--white);
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: var(--orange);
+}
+
+/* Estilos para el menú móvil */
+.mobile-menu {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background-color: var(--white);
+    box-shadow: var(--shadow-md);
+    z-index: 99;
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: all 0.3s ease;
+    padding: 1rem 0;
+    height: auto;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+.mobile-menu.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.mobile-menu ul {
+    list-style: none;
+}
+
+.mobile-menu li {
+    padding: 0.5rem 1rem;
+}
+
+.mobile-menu a {
+    display: block;
+    padding: 0.75rem;
+    color: var(--oxford-blue);
+    text-decoration: none;
+    font-weight: var(--font-medium);
+    transition: color 0.3s ease;
+    font-size: 1.1rem;
+}
+
+.mobile-menu a:hover, .mobile-menu a.active {
+    color: var(--orange);
+    background-color: rgba(252, 163, 17, 0.1);
+    border-radius: var(--border-radius-sm);
+}
+
+/* Estilos para el botón del menú móvil */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: var(--oxford-blue);
+    position: absolute;
+    left: 0;
+    transition: all 0.3s ease;
+}
+
+.menu-toggle span:nth-child(1) {
+    top: 6px;
+}
+
+.menu-toggle span:nth-child(2) {
+    top: 14px;
+}
+
+.menu-toggle span:nth-child(3) {
+    top: 22px;
+}
+
+.menu-toggle.active span:nth-child(1) {
+    transform: rotate(45deg);
+    top: 14px;
+}
+
+.menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 14px;
+}
+
+/* Responsive utilities */
+.hidden-desktop {
+    display: none;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+}
+
+.header-icon {
+    font-size: 1.2rem;
+    color: var(--oxford-blue);
+    margin-left: 1rem;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.header-icon:hover {
+    color: var(--orange);
+}
+
+/* Estilos para el menú de navegación principal */
+.main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+.main-nav li {
+    position: relative;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: var(--oxford-blue);
+    font-weight: var(--font-medium);
+    padding: 8px 15px;
+    border-radius: var(--border-radius-sm);
+    transition: all 0.3s ease;
+    display: inline-block;
+    position: relative;
+    white-space: nowrap;
+}
+
+.main-nav a:hover {
+    color: var(--orange);
+}
+
+.main-nav a.active {
+    color: var(--orange);
+    font-weight: var(--font-semibold);
+}
+
+/* Navegación principal - modificación para quitar submenús deslizables */
+.main-nav .submenu {
+    position: absolute;
+    background-color: var(--white);
+    border-radius: var(--border-radius-sm);
+    box-shadow: var(--shadow-md);
+    min-width: 200px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 100;
+    top: 100%;
+    left: 0;
+    padding: 0.5rem 0;
+}
+
+/* Solo mostrar submenús para enlaces que NO sean Productos o Categorías */
+.main-nav li:not([data-no-submenu="true"]):hover .submenu {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Ocultar específicamente los submenús para Productos y Categorías */
+.main-nav li[data-no-submenu="true"] .submenu {
+    display: none !important;
+}
+
+/* Quitar la flecha indicadora para los que no tienen submenú */
+.main-nav li[data-no-submenu="true"] > a::after {
+    display: none !important;
+}
+
+.main-nav .submenu li {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav .submenu a {
+    padding: 0.75rem 1rem;
+    display: block;
+    white-space: nowrap;
+    color: var(--oxford-blue);
+    font-weight: var(--font-regular);
+}
+
+.main-nav .submenu a:hover {
+    background-color: var(--platinum);
+}
+
+/* Efecto de subrayado para los enlaces del menú */
+.main-nav a:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background: var(--orange);
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.main-nav a:hover:after,
+.main-nav a.active:after {
+    width: 70%;
+}
+
+/* Quitar subrayado en submenús */
+.main-nav .submenu a:after {
+    display: none;
+}
+
+/* Submenús en móvil */
+.mobile-menu .submenu {
+    display: none;
+    background-color: rgba(252, 163, 17, 0.05);
+    padding-left: 1rem;
+}
+
+.mobile-menu .submenu.active {
+    display: block;
+}
+
+.mobile-menu .has-submenu > a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mobile-menu .has-submenu > a::after {
+    content: '\f107';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+}
+
+/* Selector de idioma */
+.language-selector {
+    position: relative;
+    cursor: pointer;
+}
+
+.current-lang {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.current-lang img {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+
+/* Soporte para selector de idioma en móvil */
+.mobile-language {
+    margin-top: 1.5rem;
+    padding: 0.75rem 1rem;
+    border-top: 1px solid var(--color-platinum);
+}
+
+.mobile-language .current-lang {
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.language-loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.language-loading span {
+    background-color: var(--color-white);
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    font-weight: 500;
+}
+
+.language-notification {
+    position: fixed;
+    top: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0.75rem 1.5rem;
+    background-color: var(--color-oxford-blue);
+    color: var(--color-white);
+    border-radius: 0.5rem;
+    z-index: 9999;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.language-notification.error {
+    background-color: #f44336;
+}
+
+.language-notification.hide {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-2rem);
+}
+
+.translation-highlight {
+    animation: highlight 1s ease;
+}
+
+@keyframes highlight {
+    0% {
+        background-color: rgba(252, 163, 17, 0.2);
+    }
+    100% {
+        background-color: transparent;
+    }
+}
+
+/* Animaciones para las características */
+.features .feature-card {
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.features .feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    background-color: rgba(252, 163, 17, 0.08);
+}
+
+.features .feature-card:hover .feature-icon {
+    animation: pulse 1s infinite alternate;
+    color: var(--orange);
+}
+
+/* Eliminar el efecto de degradado */
+.features .feature-card:before {
+    display: none;
+}
+
+/* Animación adicional para los iconos */
+@keyframes pulse {
+    from {
+        transform: scale(1);
+        opacity: 1;
+    }
+    to {
+        transform: scale(1.1);
+        opacity: 0.8;
+    }
+}
+
+/* Estilos adicionales para la sección de características */
+.feature-card.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.feature-card.feature-selected {
+    background-color: rgba(252, 163, 17, 0.1);
+    transform: scale(1.05);
+    z-index: 2;
+    border: 2px solid var(--orange);
+}
+
+.feature-icon.animated i {
+    animation: pulse 1.5s infinite alternate;
+}
+
+.feature-card:hover .feature-title {
+    color: var(--orange);
+    transition: all 0.3s ease;
+}
+
+.features-container {
+    position: relative;
+    perspective: 1000px;
+}
+
+.features h2 {
+    margin-bottom: 2rem;
+    position: relative;
+    display: inline-block;
+    transition: all 0.3s ease;
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    color: var(--oxford-blue);
+}
+
+.features h2:after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: var(--orange);
+    transition: width 0.5s ease;
+}
+
+.features:hover h2:after {
+    width: 100%;
+}
+
+.feature-icon i {
+    transition: all 0.3s ease;
+}
+
+/* Media queries para responsive */
+@media (max-width: 576px) {
+    html {
+        font-size: 14px;
+    }
+    
+    .container {
+        padding: 0 0.8rem;
+    }
+    
+    .header {
+        padding: 0.8rem 0;
+    }
+    
+    .logo img {
+        height: 32px;
+    }
+    
+    .logo-text {
+        font-size: 1.3rem;
+    }
+    
+    .discount-banner {
+        padding: 0.6rem 0;
+    }
+    
+    .discount-banner p {
+        font-size: 0.85rem;
+    }
+    
+    .btn {
+        padding: 0.6rem 1.2rem;
+        min-width: 110px;
+        font-size: 0.9rem;
+    }
+    
+    .footer {
+        padding: 1.5rem 0;
+    }
+    
+    .footer-section {
+        min-width: 100%;
+        margin-bottom: 1.5rem;
+    }
+    
+    .footer-section:last-child {
+        margin-bottom: 0;
+    }
+    
+    .header-icon {
+        font-size: 1.1rem;
+        margin-left: 0.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hidden-desktop {
+        display: block;
+    }
+    
+    .menu-toggle {
+        display: block;
+    }
+    
+    .flex-column-mobile {
+        flex-direction: column;
+    }
+    
+    .full-width-mobile {
+        width: 100%;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+    }
+    
+    .hidden-mobile {
+        display: none;
+    }
+    
+    .language-selector {
+        position: static;
+        display: block;
+        width: 100%;
+        margin: 15px 0 5px;
+    }
+    
+    .language-selector .current-lang {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .mobile-menu .language-selector {
+        padding: 0 15px;
+    }
+    
+    .mobile-menu .language-selector .current-lang {
+        display: flex;
+        justify-content: center;
+        padding: 10px 15px;
+        background-color: rgba(252, 163, 17, 0.15);
+        border-radius: var(--border-radius-sm);
+    }
+    
+    .main-nav ul {
+        flex-direction: column;
+    }
+    
+    .main-nav a:after {
+        display: none;
+    }
+    
+    .header-actions {
+        gap: 0.5rem;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 991px) {
+    .container {
+        max-width: 720px;
+    }
+    
+    .main-nav a {
+        padding: 8px 8px;
+        font-size: 0.9rem;
+    }
+    
+    .header-icon {
+        margin-left: 0.8rem;
+    }
+    
+    .language-selector {
+        margin-left: 8px;
+    }
+    
+    .language-selector .current-lang {
+        padding: 6px 10px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+} 

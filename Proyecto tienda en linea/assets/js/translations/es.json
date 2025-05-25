@@ -1,0 +1,59 @@
+{
+    "nav": {
+        "home": "Inicio",
+        "products": "Productos",
+        "categories": "Categorías",
+        "offers": "Ofertas",
+        "contact": "Contacto"
+    },
+    "hero": {
+        "title": "Chaquetas y prendas deportivas que fusionan innovación y estilo urbano",
+        "description": "Descubre nuestra colección de chaquetas y prendas deportivas premium con los mejores materiales, diseños únicos y tecnología textil eco-amigable.",
+        "cta": "Ver colección"
+    },
+    "about": {
+        "title": "Sobre SportLoryu's",
+        "p1": "En SportLoryu's, diseñamos chaquetas y prendas deportivas que fusionan innovación, calidad y estilo urbano. Nos comprometemos a ofrecer productos duraderos y funcionales, fabricados con materiales sostenibles, para acompañar a nuestros clientes en su vida activa.",
+        "p2": "Nuestra misión es democratizar la moda deportiva sin sacrificar el diseño premium, a través de precios accesibles y un servicio cercano.",
+        "p3": "Aspiramos a ser reconocidos como la marca líder en moda deportiva urbana en Colombia para 2027, expandiendo nuestra presencia a mercados internacionales y creando una comunidad de clientes que valoren la versatilidad de nuestras prendas.",
+        "values": {
+            "title": "Nuestros Valores",
+            "quality": "Calidad sobre cantidad: Prendas pensadas para durar",
+            "urban": "Conexión urbana: Diseños que reflejan la energía de la ciudad",
+            "sustainability": "Sostenibilidad: Uso progresivo de materiales reciclados",
+            "customer": "Enfoque en el cliente: Atención personalizada y envíos"
+        },
+        "cta": "Conoce más"
+    },
+    "products": {
+        "title": "Productos destacados",
+        "viewDetails": "Ver detalles"
+    },
+    "features": {
+        "main_title": "Nuestras Ventajas",
+        "shipping": {
+            "title": "Envío Gratis",
+            "description": "En compras mayores a COP 400.000 enviamos gratis a todo el país."
+        },
+        "warranty": {
+            "title": "Garantía de 2 Años",
+            "description": "Todas nuestras chaquetas incluyen garantía extendida contra defectos."
+        },
+        "payment": {
+            "title": "Pago Seguro",
+            "description": "Múltiples métodos de pago con la mayor seguridad."
+        },
+        "support": {
+            "title": "Soporte 24/7",
+            "description": "Atención al cliente disponible todos los días del año."
+        }
+    },
+    "footer": {
+        "about": "Tu marca de moda deportiva urbana. Diseñamos chaquetas y prendas que fusionan innovación, calidad y estilo urbano con materiales sostenibles.",
+        "links": "Enlaces Útiles",
+        "categories": "Categorías",
+        "contact": "Contacto",
+        "copyright": "Todos los derechos reservados."
+    },
+    "discount": "🔥 <strong>20% DESCUENTO</strong> en chaquetas de cuero hasta fin de mes | <strong>Envío gratis</strong> en compras mayores a COP 400.000 | <strong>Garantía de 2 años</strong> en todos nuestros productos | <strong>Soporte 24/7</strong> para clientes premium 🔥"
+} 

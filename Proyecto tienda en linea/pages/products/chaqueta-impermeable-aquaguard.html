@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>SportLoryu's - Chaqueta Impermeable "AquaGuard"</title>
+    <meta name="description" content="Detalles de la Chaqueta Impermeable AquaGuard.">
+    <meta name="theme-color" content="#14213d">
+
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+    <link rel="stylesheet" href="../../assets/css/home.css"> <!-- Reutilizar estilos de home si aplican -->
+    <link rel="stylesheet" href="../../assets/css/product-detail.css"> <!-- Nuevo archivo CSS para detalles de producto -->
+    <link rel="stylesheet" href="../../assets/css/button-animation.css"> <!-- Estilos para la animación del botón -->
+</head>
+<body>
+    <!-- Header (copiado de index.html) -->
+    <header class="header">
+        <div class="container">
+            <div class="flex justify-between items-center">
+                <div class="logo">
+                    <span class="logo-text">SportLoryu's</span>
+                </div>
+
+                <nav class="main-nav hidden-mobile">
+                    <ul class="flex gap-2">
+                        <li><a href="../../index.html" data-i18n="nav.home">Inicio</a></li>
+                        <li class="has-submenu" data-no-submenu="true">
+                            <a href="../../index.html#productos" data-i18n="nav.categories">Categorías</a>
+                            <ul class="submenu">
+                                <li><a href="#">Mujer</a></li>
+                                <li><a href="#">Hombre</a></li>
+                                <li><a href="#">Unisex</a></li>
+                                <li><a href="#">Edición limitada</a></li>
+                                <li><a href="#">Outlet</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../../index.html#contacto" data-i18n="nav.contact">Contacto</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header-actions flex items-center gap-1">
+                    <a href="#" class="header-icon">
+                        <i class="fas fa-search"></i>
+                    </a>
+                    <a href="#" class="header-icon">
+                        <i class="fas fa-user"></i>
+                    </a>
+                    <a href="#" class="header-icon">
+                        <i class="fas fa-heart"></i>
+                    </a>
+                    <a href="#" class="header-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>
+                    <div class="language-selector">
+                        <div class="current-lang">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAeElEQVR4nO3VwQ3AIAxDUd86FWIGhu0Amcy9IhawUv6TcifBAQkAgD9wPe5UooHiBkyEdulImCWu/FTNM1r5yZqPrHqUTukDmQYqP1VfHaG5Xncq0cDiBkyEdulIzOuX2EPuVDqlD2QaGPmpmgiN/GR97RIDAKCGPreWChBwWzVLAAAAAElFTkSuQmCC" alt="Español" class="lang-flag">
+                            <span>ES</span>
+                        </div>
+                    </div>
+                    <button class="menu-toggle hidden-desktop">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Menú móvil (copiado de index.html) -->
+    <div class="mobile-menu">
+        <nav>
+            <ul>
+                <li><a href="../../index.html" data-i18n="nav.home">Inicio</a></li>
+                <li class="has-submenu">
+                    <a href="../../index.html#productos" data-i18n="nav.categories">Categorías</a>
+                    <ul class="submenu">
+                        <li><a href="#">Mujer</a></li>
+                        <li><a href="#">Hombre</a></li>
+                        <li><a href="#">Unisex</a></li>
+                        <li><a href="#">Edición limitada</a></li>
+                        <li><a href="#">Outlet</a></li>
+                    </ul>
+                </li>
+                <li><a href="../../index.html#contacto" data-i18n="nav.contact">Contacto</a></li>
+            </ul>
+            <!-- Selector de idioma para móvil -->
+            <div class="language-selector mobile-language">
+                <div class="current-lang">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAeElEQVR4nO3VwQ3AIAxDUd86FWIGhu0Amcy9IhawUv6TcifBAQkAgD9wPe5UooHiBkyEdulImCWu/FTNM1r5yZqPrHqUTukDmQYqP1VfHaG5Xncq0cDiBkyEdulIzOuX2EPuVDqlD2QaGPmpmgiN/GR97RIDAKCGPreWChBwWzVLAAAAAElFTkSuQmCC" alt="Español" class="lang-flag">
+                    <span>ES</span>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Banner de descuento (copiado de index.html) -->
+    <div class="discount-banner">
+        <div class="container">
+            <p data-i18n="discount">🔥 <strong>20% DESCUENTO</strong> en chaquetas de cuero hasta fin de mes | <strong>Envío gratis</strong> en compras mayores a 100.000 COP | <strong>Garantía de 2 años</strong> en todos nuestros productos | <strong>Soporte 24/7</strong> para clientes premium 🔥</p>
+        </div>
+    </div>
+
+    <!-- Sección de Detalles del Producto -->
+    <section class="product-detail-section">
+        <div class="container">
+            <div class="product-detail-content">
+                <div class="product-detail-image">
+                    <img src="../../assets/images/products/1.png" alt="Chaqueta Impermeable AquaGuard">
+                </div>
+                <div class="product-detail-info">
+                    <h1 class="product-title">Chaqueta Impermeable "AquaGuard"</h1>
+                    <div class="product-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>(32 opiniones)</span>
+                    </div>
+                    <p class="product-price">COP 400.000</p>
+                    <p class="product-description">Mantente seco y cómodo con nuestra Chaqueta Impermeable "AquaGuard". Ideal para los días de lluvia, con diseño moderno y materiales de alta calidad.</p>
+
+                    <div class="product-options">
+                        <div class="size-selector">
+                            <label for="size">Talla:</label>
+                            <select id="size" name="size">
+                                <option value="xs">XS</option>
+                                <option value="s">S</option>
+                                <option value="m">M</option>
+                                <option value="l">L</option>
+                                <option value="xl">XL</option>
+                            </select>
+                        </div>
+                        
+                        <div class="quantity-selector">
+                            <label for="quantity">Cantidad:</label>
+                            <input type="number" id="quantity" name="quantity" value="1" min="1">
+                        </div>
+                        
+                        <!-- Add to cart button moved below both size and quantity selectors -->
+                        <div class="add-to-cart-button">
+                            <button class="btn btn-primary"><i class="fas fa-shopping-cart"></i> Añadir al carrito</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pestañas de Información Adicional (Descripción, Características, Reseñas) -->
+            <div class="product-tabs">
+                <div class="tab-header">
+                    <button class="tab-button active" data-tab="description">Descripción</button>
+                    <button class="tab-button" data-tab="features">Características</button>
+                    <button class="tab-button" data-tab="reviews">Reseñas</button>
+                </div>
+                <div class="tab-content">
+                    <div id="description" class="tab-pane active">
+                        <h3>Descripción del Producto</h3>
+                        <p>La Chaqueta Impermeable "AquaGuard" está diseñada para ofrecerte la máxima protección contra la lluvia y el viento, sin sacrificar el estilo. Fabricada con tejidos técnicos de última generación, garantiza durabilidad y confort en cualquier condición climática. Su diseño ligero y transpirable la hace perfecta para actividades al aire libre o simplemente para el día a día en la ciudad.</p>
+                        <ul>
+                            <li>Tejido 100% impermeable y transpirable</li>
+                            <li>Costuras selladas para una protección total</li>
+                            <li>Capucha ajustable con visera</li>
+                            <li>Puños y cintura ajustables para un mejor ajuste</li>
+                            <li>Bolsillos laterales con cremallera protegida</li>
+                        </ul>
+                    </div>
+                    <div id="features" class="tab-pane">
+                        <h3>Características Técnicas</h3>
+                        <ul>
+                            <li>Material exterior: Nylon Ripstop con revestimiento PU</li>
+                            <li>Impermeabilidad: 10,000 mm</li>
+                            <li>Transpirabilidad: 8,000 g/m²/24h</li>
+                            <li>Forro interior: Malla de poliéster</li>
+                            <li>Cremalleras: YKK impermeables</li>
+                            <li>Peso aproximado: 450 gramos</li>
+                        </ul>
+                    </div>
+                    <div id="reviews" class="tab-pane">
+                        <h3>Reseñas de Clientes</h3>
+                        <div class="customer-reviews">
+                            <div class="review">
+                                <div class="review-header">
+                                    <span class="reviewer-name">Roberto Castaño</span>
+                                    <div class="review-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <span class="review-date">05/02/2024</span>
+                                </div>
+                                <p class="review-text">Compré esta chaqueta para mis caminatas en la montaña y ha superado todas mis expectativas. La llevé a una excursión con lluvia intensa y permanecí completamente seco. Las costuras selladas realmente funcionan y la capucha ajustable con visera es perfecta para mantener la lluvia fuera de la cara.</p>
+                            </div>
+                            
+                            <div class="review">
+                                <div class="review-header">
+                                    <span class="reviewer-name">Natalia Vélez</span>
+                                    <div class="review-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                    <span class="review-date">20/03/2024</span>
+                                </div>
+                                <p class="review-text">Excelente chaqueta impermeable. La he usado en varias condiciones climáticas y siempre me mantiene seca. El material es ligero pero resistente, y me encanta que sea transpirable, no te hace sudar como otras chaquetas impermeables. Los ajustes en puños y cintura son muy útiles para evitar que entre agua.</p>
+                            </div>
+                            
+                            <div class="review">
+                                <div class="review-header">
+                                    <span class="reviewer-name">Fernando Girón</span>
+                                    <div class="review-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <span class="review-date">08/04/2024</span>
+                                </div>
+                                <p class="review-text">Muy buena chaqueta para la temporada de lluvias en Medellín. La impermeabilidad de 10,000 mm es suficiente para aguaceros fuertes. Los bolsillos con cremallera protegida son geniales para mantener el celular y la billetera secos. Le quito una estrella porque el forro interior podría ser un poco más cálido para días fríos.</p>
+                            </div>
+                            
+                            <div class="review">
+                                <div class="review-header">
+                                    <span class="reviewer-name">Marcela Botero</span>
+                                    <div class="review-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <span class="review-date">15/04/2024</span>
+                                </div>
+                                <p class="review-text">La mejor inversión para la temporada de lluvias. Esta chaqueta es perfecta tanto para la ciudad como para actividades al aire libre. El diseño es moderno y se puede usar con cualquier outfit. Las cremalleras YKK son de excelente calidad y el peso ligero hace que sea fácil de llevar a todas partes. ¡100% recomendada!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- Footer (copiado de index.html) -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Información de la empresa -->
+                <div class="footer-section">
+                    <h3>SportLoryu's</h3>
+                    <p>Tu marca de moda deportiva urbana. Diseñamos chaquetas y prendas que fusionan innovación, calidad y estilo urbano con materiales sostenibles.</p>
+                    <div class="social-icons">
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                </div>
+
+                <!-- Enlaces útiles -->
+                <div class="footer-section">
+                    <h3>Enlaces Útiles</h3>
+                    <ul>
+                        <li>Sobre Nosotros</li>
+                        <li>Términos y Condiciones</li>
+                        <li>Política de Privacidad</li>
+                        <li>Política de Devoluciones</li>
+                        <li>Preguntas Frecuentes</li>
+                    </ul>
+                </div>
+
+                <!-- Categorías -->
+                <div class="footer-section">
+                    <h3>Categorías</h3>
+                    <ul>
+                        <li>Cuero</li>
+                        <li>Denim</li>
+                        <li>Bomber</li>
+                        <li>Parka</li>
+                        <li>Impermeable</li>
+                    </ul>
+                </div>
+
+                <!-- Contacto -->
+                <div id="contacto" class="footer-section">
+                    <h3>Contacto</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Av. 80 # 45-20, Medellín</p>
+                    <p><i class="fas fa-phone"></i> +57 310 123 4567</p>
+                    <p><i class="fas fa-envelope"></i> info@sportloryus.com</p>
+                    <p><i class="fas fa-clock"></i> Lun-Vie: 9am - 6pm</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom text-center py-2 mt-2">
+                <p>&copy; 2024 SportLoryu's. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts JS -->
+    <script src="../../assets/js/main.js"></script>
+    <script>
+        // Script para manejar las pestañas
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabs = document.querySelectorAll('.tab-button');
+            const panes = document.querySelectorAll('.tab-pane');
+
+            tabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    const targetTab = tab.dataset.tab;
+
+                    tabs.forEach(t => t.classList.remove('active'));
+                    panes.forEach(pane => pane.classList.remove('active'));
+
+                    tab.classList.add('active');
+                    document.getElementById(targetTab).classList.add('active');
+                });
+            });
+        });
+    </script>
+    <!-- Script para la animación del botón "Añadir al carrito" -->
+    <script src="../../assets/js/cart-animation.js"></script>
+</body>
+</html> 
